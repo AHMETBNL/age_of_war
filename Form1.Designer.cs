@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_oyna = new System.Windows.Forms.Button();
             this.btn_zorluk = new System.Windows.Forms.Button();
             this.btn_skor_tablosu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -43,21 +40,10 @@
             this.panel1.Controls.Add(this.btn_skor_tablosu);
             this.panel1.Controls.Add(this.btn_zorluk);
             this.panel1.Controls.Add(this.btn_oyna);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(1, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(868, 582);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(868, 582);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btn_oyna
             // 
@@ -68,6 +54,7 @@
             this.btn_oyna.TabIndex = 1;
             this.btn_oyna.Text = "oyna";
             this.btn_oyna.UseVisualStyleBackColor = false;
+            this.btn_oyna.Click += new System.EventHandler(this.btn_oyna_Click);
             // 
             // btn_zorluk
             // 
@@ -98,8 +85,8 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,7 +96,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_zorluk;
         private System.Windows.Forms.Button btn_oyna;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_skor_tablosu;
     }
 }
