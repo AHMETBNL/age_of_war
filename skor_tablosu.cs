@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace age_of_war
 {
-    public partial class Form1: Form
+    public partial class skor_tablosu: Form
     {
-        public Form1()
+        public skor_tablosu()
         {
             InitializeComponent();
-        }
-
-        private void btn_skor_tablosu_Click(object sender, EventArgs e)
-        {
-            skor_tablosu skor_tablo = new skor_tablosu();
-            skor_tablo.Show();
         }
     }
 }
