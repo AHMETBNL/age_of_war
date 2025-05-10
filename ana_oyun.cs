@@ -19,8 +19,8 @@ namespace age_of_war
 
         private void ana_oyun_Load(object sender, EventArgs e)
         {
-            panel1.BackgroundImage = Image.FromFile(@"C:\Users\90551\OneDrive\Masaüstü\age_of_war\age_of_war_backcolor.jpg");
-            panel1.BackgroundImageLayout = ImageLayout.Stretch; // Görseli panele yay
+
+            
         }
     }
 }
