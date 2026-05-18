@@ -1,0 +1,27 @@
+{
+  "name": "age_of_war",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AHMETBNL/age_of_war.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AHMETBNL/age_of_war/issues"
+  },
+  "homepage": "https://github.com/AHMETBNL/age_of_war#readme",
+  "devDependencies": {
+    "vite": "^8.0.13"
+  }
+}

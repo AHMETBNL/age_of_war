@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age of War - Web Edition</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="ui-layer">
+        <div id="top-bar">
+          <!-- Sol: Oyuncu Stats -->
+          <div class="player-stats">
+            <div class="stat-box">⚔️ Gold: <span id="player-gold">15</span></div>
+            <div class="stat-box">⭐ XP: <span id="player-xp">0</span></div>
+          </div>
+
+          <!-- Orta: Asker Gönderme Paneli -->
+          <div id="build-menu">
+            <button id="btn-train-melee" class="menu-btn">
+              <img src="./assets/clubman.png" alt="Infantry" />
+              <span class="cost">15 Gold</span>
+            </button>
+            <button id="btn-train-ranged" class="menu-btn">
+              <img src="./assets/slinger.png" alt="Slinger" />
+              <span class="cost">25 Gold</span>
+            </button>
+            <button id="btn-buy-turret" class="menu-btn">
+              <img src="./assets/catapult.png" alt="Catapult" />
+              <span class="cost">200 Gold</span>
+            </button>
+            <button id="btn-evolve" class="menu-btn evolve-btn">
+              <span>Evolve</span>
+              <span class="cost">4000 XP</span>
+            </button>
+          </div>
+
+          <!-- Meteor Güç Butonu -->
+          <div id="meteor-panel">
+            <button id="btn-meteor" class="meteor-btn" title="Gökten meteor yağdır!">
+              <span class="meteor-icon">☄️</span>
+              <span class="meteor-label">METEOR</span>
+              <div class="meteor-bar"><div class="meteor-fill"></div></div>
+            </button>
+          </div>
+
+          <!-- Sağ: Düşman Stats -->
+          <div class="enemy-stats">
+            <div class="stat-box">💀 Gold: <span id="enemy-gold">15</span></div>
+            <div class="stat-box">⭐ XP: <span id="enemy-xp">0</span></div>
+          </div>
+        </div>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
